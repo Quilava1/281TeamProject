@@ -445,19 +445,19 @@ $SKPOLY
   9
 $TDCREATE
  40
-2459422.12056147
+2459422.126224178
   9
 $TDUCREATE
  40
-2459421.62056147
+2459421.626224178
   9
 $TDUPDATE
  40
-2459422.120561771
+2459422.126225475
   9
 $TDUUPDATE
  40
-2459421.620561771
+2459421.626225475
   9
 $TDINDWG
  40
@@ -505,7 +505,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-A0
+A2
   9
 $SURFTAB1
  70
@@ -885,7 +885,7 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{d7c79a7d-0110-4fd9-b126-974adc463dc7}
+{5829feb5-4923-4329-a897-34a23035a865}
   9
 $VERSIONGUID
   2
@@ -1491,7 +1491,7 @@ STYLE
 100
 AcDbSymbolTable
  70
-     2
+     3
   0
 STYLE
   5
@@ -1523,7 +1523,7 @@ txt
   0
 STYLE
   5
-9C
+74
 330
 3
 100
@@ -1532,6 +1532,34 @@ AcDbSymbolTableRecord
 AcDbTextStyleTableRecord
   2
 SLDTEXTSTYLE0
+ 70
+     0
+ 40
+0.0
+ 41
+0.75
+ 50
+0.0
+ 71
+     0
+ 42
+3.5
+  3
+TXT
+  4
+
+  0
+STYLE
+  5
+9E
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+SLDTEXTSTYLE1
  70
      0
  40
@@ -1867,9 +1895,49 @@ SECTION
   2
 ENTITIES
   0
+MTEXT
+  5
+75
+330
+1F
+100
+AcDbEntity
+  8
+0
+  6
+Continuous
+ 62
+     7
+370
+     0
+100
+AcDbMText
+ 10
+135.3516371122
+ 20
+271.0141367458
+ 30
+0.0
+ 40
+4.7625
+ 41
+0.0
+ 71
+     1
+ 72
+     1
+  1
+9mm MDF
+  7
+SLDTEXTSTYLE0
+ 73
+     1
+ 44
+1.0
+  0
 LINE
   5
-74
+76
 330
 1F
 100
@@ -1899,7 +1967,7 @@ AcDbLine
   0
 LINE
   5
-75
+77
 330
 1F
 100
@@ -1929,7 +1997,7 @@ AcDbLine
   0
 LINE
   5
-76
+78
 330
 1F
 100
@@ -1959,7 +2027,7 @@ AcDbLine
   0
 LINE
   5
-77
+79
 330
 1F
 100
@@ -1989,7 +2057,7 @@ AcDbLine
   0
 LINE
   5
-78
+7A
 330
 1F
 100
@@ -2019,7 +2087,7 @@ AcDbLine
   0
 LINE
   5
-79
+7B
 330
 1F
 100
@@ -2049,7 +2117,7 @@ AcDbLine
   0
 ARC
   5
-7A
+7C
 330
 1F
 100
@@ -2081,7 +2149,7 @@ AcDbArc
   0
 LINE
   5
-7B
+7D
 330
 1F
 100
@@ -2111,7 +2179,7 @@ AcDbLine
   0
 CIRCLE
   5
-7C
+7E
 330
 1F
 100
@@ -2137,7 +2205,7 @@ AcDbCircle
   0
 CIRCLE
   5
-7D
+7F
 330
 1F
 100
@@ -2163,7 +2231,7 @@ AcDbCircle
   0
 LINE
   5
-7E
+80
 330
 1F
 100
@@ -2193,7 +2261,7 @@ AcDbLine
   0
 LINE
   5
-7F
+81
 330
 1F
 100
@@ -2223,7 +2291,7 @@ AcDbLine
   0
 LINE
   5
-80
+82
 330
 1F
 100
@@ -2253,7 +2321,7 @@ AcDbLine
   0
 LINE
   5
-81
+83
 330
 1F
 100
@@ -2283,7 +2351,7 @@ AcDbLine
   0
 LINE
   5
-82
+84
 330
 1F
 100
@@ -2313,7 +2381,7 @@ AcDbLine
   0
 LINE
   5
-83
+85
 330
 1F
 100
@@ -2343,7 +2411,7 @@ AcDbLine
   0
 ARC
   5
-84
+86
 330
 1F
 100
@@ -2375,7 +2443,7 @@ AcDbArc
   0
 LINE
   5
-85
+87
 330
 1F
 100
@@ -2405,7 +2473,7 @@ AcDbLine
   0
 CIRCLE
   5
-86
+88
 330
 1F
 100
@@ -2431,7 +2499,7 @@ AcDbCircle
   0
 CIRCLE
   5
-87
+89
 330
 1F
 100
@@ -2457,7 +2525,7 @@ AcDbCircle
   0
 LINE
   5
-88
+8A
 330
 1F
 100
@@ -2487,7 +2555,7 @@ AcDbLine
   0
 LINE
   5
-89
+8B
 330
 1F
 100
@@ -2517,7 +2585,7 @@ AcDbLine
   0
 LINE
   5
-8A
+8C
 330
 1F
 100
@@ -2547,7 +2615,7 @@ AcDbLine
   0
 LINE
   5
-8B
+8D
 330
 1F
 100
@@ -2577,7 +2645,7 @@ AcDbLine
   0
 LINE
   5
-8C
+8E
 330
 1F
 100
@@ -2607,7 +2675,7 @@ AcDbLine
   0
 LINE
   5
-8D
+8F
 330
 1F
 100
@@ -2637,7 +2705,7 @@ AcDbLine
   0
 ARC
   5
-8E
+90
 330
 1F
 100
@@ -2669,7 +2737,7 @@ AcDbArc
   0
 LINE
   5
-8F
+91
 330
 1F
 100
@@ -2699,7 +2767,7 @@ AcDbLine
   0
 CIRCLE
   5
-90
+92
 330
 1F
 100
@@ -2725,7 +2793,7 @@ AcDbCircle
   0
 CIRCLE
   5
-91
+93
 330
 1F
 100
@@ -2751,7 +2819,7 @@ AcDbCircle
   0
 LINE
   5
-92
+94
 330
 1F
 100
@@ -2781,7 +2849,7 @@ AcDbLine
   0
 LINE
   5
-93
+95
 330
 1F
 100
@@ -2811,7 +2879,7 @@ AcDbLine
   0
 LINE
   5
-94
+96
 330
 1F
 100
@@ -2841,7 +2909,7 @@ AcDbLine
   0
 LINE
   5
-95
+97
 330
 1F
 100
@@ -2871,7 +2939,7 @@ AcDbLine
   0
 LINE
   5
-96
+98
 330
 1F
 100
@@ -2901,7 +2969,7 @@ AcDbLine
   0
 LINE
   5
-97
+99
 330
 1F
 100
@@ -2931,7 +2999,7 @@ AcDbLine
   0
 ARC
   5
-98
+9A
 330
 1F
 100
@@ -2963,7 +3031,7 @@ AcDbArc
   0
 LINE
   5
-99
+9B
 330
 1F
 100
@@ -2993,7 +3061,7 @@ AcDbLine
   0
 CIRCLE
   5
-9A
+9C
 330
 1F
 100
@@ -3019,7 +3087,7 @@ AcDbCircle
   0
 CIRCLE
   5
-9B
+9D
 330
 1F
 100
@@ -3045,7 +3113,7 @@ AcDbCircle
   0
 MTEXT
   5
-9D
+9F
 330
 1F
 100
@@ -3075,7 +3143,7 @@ AcDbMText
   1
 SOLIDWORKS Educational Product.
   7
-SLDTEXTSTYLE0
+SLDTEXTSTYLE1
  73
      1
  44
@@ -3083,7 +3151,7 @@ SLDTEXTSTYLE0
   0
 MTEXT
   5
-9E
+A0
 330
 1F
 100
@@ -3113,7 +3181,7 @@ AcDbMText
   1
 For Instructional Use Only.
   7
-SLDTEXTSTYLE0
+SLDTEXTSTYLE1
  73
      1
  44
@@ -3161,7 +3229,7 @@ ACAD_SCALELIST
   3
 DWGPROPS
 350
-9F
+A1
   0
 DICTIONARY
   5
@@ -3417,7 +3485,7 @@ D2
   0
 XRECORD
   5
-9F
+A1
 102
 {ACAD_REACTORS
 330
@@ -3469,9 +3537,9 @@ Malachi
  40
 0.0
  41
-2459421.62056147
+2459421.626224178
  42
-2459421.620561771
+2459421.626225475
   1
 
  90
