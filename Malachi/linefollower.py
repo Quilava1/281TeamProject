@@ -7,8 +7,8 @@ import time
 GPIO.setmode(GPIO.BOARD)
 
 #line followers
-GPIO.setup(1, GPIO.IN)
-GPIO.setup(2, GPIO.IN)
+GPIO.setup(1, GPIO.IN) #left follower
+GPIO.setup(2, GPIO.IN) #right follower
 #GPIO.setup(3, GPIO.IN)
 #GPIO.setup(4, GPIO.IN)
 
@@ -37,7 +37,6 @@ def measure():
     GPIO.output(6, 1)
     time.sleep(0.00001)
     GPIO.output(6, 0)
-    
     startTime = time.time()
     stopTime = time.time()
     while GPIO.input(5) == 0:
@@ -48,25 +47,25 @@ def measure():
     distance = (deltaTime * 34300) / 2
     return distance
 
- state = 0
- Direction = 'halt'
- dt = 0
- dist = 0.00
+state = 0
+Direction = 'halt'
+dt = 0
+dist = 0.00
  
  
  
  
  
- while state >= 0:
+while state >= 0:
  
  
     if GPIO.input(1) == 1:
-        if GPIP.input(2) == 1:
+        if GPIO.input(2) == 1:
             state == 1
         else:
             state == 2
     else:
-        if GPIP.input(2) == 1:
+        if GPIO.input(2) == 1:
             state == 3
         else:
             state == 4
@@ -85,4 +84,4 @@ def measure():
             
             
             
-    print(“Left:1    Right:0    Direction:” + Direction +'     Barrier: ' + dist +'cm' , end=”\r”)
+    print('Left:' +str(GPIO.input(1)) +   '  Right:' +str(GPIO.input(2))    Direction:” + Direction +'     Barrier: ' + dist +'cm' , end=”\r”)
