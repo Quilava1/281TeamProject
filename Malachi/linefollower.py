@@ -43,12 +43,17 @@ def measure():
     GPIO.output(USout, 1)
     time.sleep(0.00001)   #set trigger for 10 microseonds for 8 cycle sonic
     GPIO.output(USout, 0)
+    i = 0
     startTime = time.time()
     stopTime = time.time()
-    while  GPIO.input(USin) == 0: #set start time until posedge of input
-        startTime = time.time()
-    while GPIO.input(USin) == 1: #set stoptime till negedge of input
+    #set start time until posedge of input, the time a
+    while  GPIO.input(USin) == 0 and i < 10000000: # raspberry pi 3 B+ operates at 1.4GHz which is about 0.72 ns per instruction
+        startTime = time.time()                   #it would probably take at most around 10 ms to loop 10000000 times at which point we can assume it is stuck in the loop
+        i += 1                                    #a more generalised approach could involve reading an external file containing the systems clock speed and on startup compute a cycle count based on a given desired approximate wait time
+    i = 0
+    while GPIO.input(USin) == 1 and i < 100000000: #set stoptime till negedge of input, wait about 100ms at the longest
         stopTime = time.time()
+        i += 1
     deltaTime = stopTime - startTime
     distance = (deltaTime * 34300) / 2
     return distance
@@ -95,4 +100,4 @@ while state >= 0:
             
     os.system('cls' if os.name=='nt' else 'clear')        
     print('Left:' +str(GPIO.input(LFL)) +   '  Right:' +str(GPIO.input(LFR))  +  '  Direction:' + Direction +'    Barrier: ' + str(dist) +'cm' , end = '\r')
-    time.sleep(1)
+    time.sleep(0.2)   #update about 5 times per second
